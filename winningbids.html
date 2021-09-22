@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Winning Bids | Piclike</title>
+
+    <style>
+        li {
+            text-decoration: none;
+            list-style-type: none;
+            margin: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background-color: rgb(236, 236, 236); display: flex; flex-direction: column;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./logo.png" alt="" width="150" height="90">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Auction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dhaval
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./dashboard.html">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="./profile.html">Personal Profile</a></li>
+                            <li><a class="dropdown-item" href="./bids.html">My Bids</a></li>
+                            <li><a class="dropdown-item" href="./winningbids.html">Winning Bids</a></li>
+                            <li><a class="dropdown-item" href="./favorites.html"> My Favorites</a></li>
+                            <li><a class="dropdown-item" href="#"> Logout</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="cont1"
+            style="padding: 20px;margin: 20px;background-color: white; box-shadow: 2px 2px 16px black; border-radius: 20px;width: 30%; float: left;">
+            <li>
+                <ul class="dashboard-menu">
+                    <li>
+                        <a href="dashboard"><i class="flaticon-dashboard"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="profile"><i class="flaticon-settings"></i>Personal Profile </a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#myModal6" style="cursor: pointer;"><i
+                                class="flaticon-auction"></i> Upload New Images</a>
+                    </li>
+                    <li>
+                        <a href="http://fastwaycable.co.in/piclike/product/images"><i class="flaticon-auction"></i>My
+                            Upload Images</a>
+                    </li>
+                    <li>
+                        <a href="referral"><i class="flaticon-shake-hand"></i>Referrals</a>
+                    </li>
+                    <li>
+                        <a href="http://fastwaycable.co.in/piclike/user/my_bid"><i class="flaticon-auction"></i>My
+                            Bids</a>
+                    </li>
+                    <li>
+                        <a href="http://fastwaycable.co.in/piclike/user/winning_bids"><i
+                                class="flaticon-auction"></i>Winning Bids</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class=""></i>My
+                            Favorites</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class=""></i>Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <div class="cont2" style="display: flex; flex-direction: column;">
+
+
+            <div class="one"
+                style="padding: 20px;margin: 20px;background-color: white; box-shadow: 2px 2px 16px black; border-radius: 20px; width: 100%;">
+                <h4 class="title">Winning bids</h4>
+
+                <div style="display: flex; flex-direction: row;justify-content: space-between;">
+                    <div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">All</a></li>
+                                <li><a class="dropdown-item" href="#">Name</a></li>
+                                <li><a class="dropdown-item" href="#">Date</a></li>
+                                <li><a class="dropdown-item" href="#">Type</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="zone blue grid-wrapperr">
+                <div class="box zone"><img src="./auction-1.jpg">
+                    <p class="center">2018 Hyundai sonata</p>
+                    <p class="center" style="border-top: 1px groove black; padding-top: 10px;">Current bid | Buy now</p>
+                    <p class="center" style="border-bottom: 1px groove black"> $800 | $5.00</p>
+                    <button type="button" class="btn btn-primary center">Submit a bid</button>
+                </div>
+                <div class="box zone"><img src="./auction-3.jpg">
+                    <p class="center">2018 Honda Accord, Sports</p>
+                    <p class="center" style="border-top: 1px groove black; padding-top: 10px;">Current bid | Buy now</p>
+                    <p class="center" style="border-bottom: 1px groove black"> $800 | $6.00</p>
+                    <button type="button" class="btn btn-primary center">Submit a bid</button>
+                </div>
+                <div class="box zone"><img src="./auction-2.jpg">
+                    <p class="center">2018 Nissan Versa</p>
+                    <p class="center" style="border-top: 1px groove black; padding-top: 10px;">Current bid | Buy now</p>
+                    <p class="center" style="border-bottom: 1px groove black"> $800 | $8.00</p>
+                    <button type="button" class="btn btn-primary center">Submit a bid</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="./index.html"
+                        aria-label="Bootstrap">
+                        <img src="./logo.png" alt="">
+
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <span class="fs-5">PicLike</span>
+                    </a>
+
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Auction Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">My Bids</a></li>
+                        <li class="mb-2"><a href="">Winning Bids</a></li>
+                        <li class="mb-2"><a href="/docs/5.0/examples/">My Favorites</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="">About Piclike</a></li>
+                        <li class="mb-2"><a href="/">Auctions</a></li>
+                        <li class="mb-2"><a href="/">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>We're here to help</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Your Account</a></li>
+                        <li class="mb-2"><a href="/">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled text-small">
+
+
+                        <a style="font-size: 30px;padding: 10px;" href=""><i class="fa fa-facebook-square"></i></a>
+                        <a style="font-size: 30px;padding: 10px;" href=""><i class="fa fa-linkedin"></i></a>
+                        <a style="font-size: 30px;padding: 10px;" href=""><i class="fa fa-twitter-square"></i></a>
+                        <a style="font-size: 30px;padding: 10px;" href=""><i class="fa fa-instagram"></i></a>
+
+                    </ul>
+                </div>
+            </div>
+
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
